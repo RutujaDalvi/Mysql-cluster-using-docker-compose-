@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+    
+    container1:
+        container_name: rd1
+        image: mysql:latest
+        ports: 
+            - "8001:8005"
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes     
+            
+    container2:
+        container_name: rd2
+        image: mysql:latest
+        ports: 
+            - "8002:8005"
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+           
+    container3:
+        container_name: rd3
+        image: mysql:latest
+        ports: 
+            - "8003:8005"
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+           
